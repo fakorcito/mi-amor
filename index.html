@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín?</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://cdn.pixabay.com/photo/2025/01/07/03/18/saint-valentines-day-9316038_1280.png');
+                
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: #ff4d4d;
+            margin: 20px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #ff7f7f;
+            margin: 15px 0;
+            animation: fadeIn 2s ease-in-out;
+            animation-delay: 1s;
+        }
+
+        p {
+            font-size: 20px;
+            color:  #00008B;
+            max-width: 600px;
+            margin: 20px auto;
+            line-height: 1.6;
+            animation: fadeIn 2s ease-in-out;
+            animation-delay: 2s;
+        }
+
+        .heart {
+            font-size: 100px;
+            color: #ff3366;
+            margin: 20px;
+            animation: heartBeat 1s infinite;
+        }
+
+        .button {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 22px;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+            animation: fadeIn 2s ease-in-out;
+            animation-delay: 3s;
+        }
+
+        .button:hover {
+            background-color: #ff3366;
+        }
+
+        .image-container {
+            position: relative;
+            margin: 20px 0;
+            animation: fadeIn 2s ease-in-out;
+            animation-delay: 4s;
+            max-width: 100%;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes heartBeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.2); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        .confetti {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background-image: url('https://www.pngkey.com/png/detail/227-2274245_confetti-transparent-background-png-png-clip-art.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            animation: confettiFall 3s infinite;
+        }
+
+        @keyframes confettiFall {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(100%); }
+        }
+
+        /* Additional styling for responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 40px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 18px;
+                max-width: 90%;
+            }
+            .button {
+                font-size: 18px;
+                padding: 12px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="confetti"></div>
+    <h1>¿Quieres ser mi San Valentín?</h1>
+    <h2>Porque el amor contigo es lo mejor que me ha pasado.</h2>
+
+    <p>Desde que llegaste a mi vida, cada día es más brillante. Este San Valentín quiero que sea el más especial de todos, y no puedo imaginarme celebrarlo con nadie más que tú. ❤️</p>
+    <div class="heart">❤️</div>
+    <div class="image-container">
+        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsnPXBG5gKmuEvK__ISuKNZ0F05uKb3pR90w&s.jpg' > 
+    </div>
+    <p>Quiero pasar este 14 de febrero contigo, riendo, disfrutando, y celebrando el amor que compartimos. Te propongo que sea el primer San Valentín de muchos más juntos. 💖</p>
+    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2eKit0iiLVi1rZLw6QWHsBfcLcXgyv8IImQ&s" class="button">¡Sí, quiero!</a>
+</body>
+</html>
